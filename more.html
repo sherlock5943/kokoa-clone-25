@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Dohyun Talk</title>
+  </head>
+  <body>
+    <!-- 상단바 만들기 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"> </i>
+      </div>
+    </div>
+    <!-- 스크린 헤더 만들기 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></a></i>
+          <div class="point"></div>
+      </div>
+    </header>
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <!-- .user-component_column*2 단축키 -->
+            <div class="user-component__column">
+              <img
+                src="screenshot/c7d2bcf428f546f599693ec79c378394_324693564_572235581014942_1252107618471611872_n.jpg"
+                class="user-component__avatar user-component__avatar--xl"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title">김고은</h4>
+                <h6 class="user-component__subtitle">+82 1234 1234 <i class="fa-solid fa-star"></i></h6>
+              </div>
+            </div>
+            <div class="user-component__column">
+                <i class="fa-solid fa-book fa-2x"></i>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon-row__icon"><i class="fa-solid fa-calendar-days"></i><span>Calendar</span></div>
+            <div class="icon-row__icon"><i class="fa-solid fa-hard-drive"></i><span>Talk Drive</span></div>
+            <div class="icon-row__icon"><i class="fa-solid fa-face-smile-wink"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fa-solid fa-paint-roller"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="fa-solid fa-chess-king"></i><span>Account</span></div>
+            <div class="icon-row__icon"><i class="fa-solid fa-comments"></i><span>Openchat</span></div>
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Dohyun Story</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Dohyun friends</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Friends Gem</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 내비게이션바 만들기 -->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span class="nav__notification2"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/867203100b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

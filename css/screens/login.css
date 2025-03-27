@@ -1,0 +1,66 @@
+/* 웰컴 도현이 있는 로그인 상태창입니다. */
+
+.welcome-header {
+  margin: 90px 0px; /* 상단 여백을 90px로 설정하여 요소를 아래로 이동 */
+  /* h1, p1 을 다루는 코드라 text-align:center 가능! */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  display: flex; /* 플렉스 박스 레이아웃을 사용하여 자식 요소들을 유연하게 배치 */
+  flex-direction: column; /* 자식 요소들을 세로 방향으로 쌓이도록 설정 */
+  align-items: center; /* 자식 요소들을 수평 가운데 정렬 */
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.8;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* not 은 이 것을 제외한 나머지에 적용하고 싶다는 코드이다. */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* input에 들어있는 placeholder 에만 적용 이거좀 신기 */
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--puple);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--puple);
+  color: white;
+  padding: 20px 0px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /* 부모로부터 상속 */
+  opacity: 0.9;
+  font-size: 13px;
+}
